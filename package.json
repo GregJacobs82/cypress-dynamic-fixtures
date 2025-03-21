@@ -1,0 +1,15 @@
+{
+  "name": "cypress-dynamic-fixtures",
+  "author": "Gregory Jacobs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["cypress", "dynamic fixtures", "fixture", "overwrite", "custom commands"],
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "babel-plugin-import-glob": "^2.0.0"
+  }
+}
