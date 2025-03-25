@@ -81,19 +81,19 @@ _
 ##  ⃔ Backwards compatible
 
 In your existing project, you can use cy.fixture() with static `.json` data just as before. Nothing breaks.
-```json
-// cypress/fixtures/static_data.json
-{
-    staticDate: '2025-03-25'
-}
-```
-```js
-// ./existing_spec.js
-Then('I expect a static date to exist', () => {
-    cy.fixture('static_data') // NOTICE no file extension required (optional: static_data.json)
-        .then((fixture) => cy.contains(fixture.staticDate).should('exist'));
-});
-```
+-  cypress/fixtures/static_data.json
+   ```json
+   {
+       "staticDate": "2025-03-25"
+   }
+   ```
+- ./existing_spec.js
+  ```js
+  Then('I expect a static date to exist', () => {
+      cy.fixture('static_data') // NOTICE no file extension required (optional: static_data.json)
+          .then((fixture) => cy.contains(fixture.staticDate).should('exist'));
+  });
+  ```
 
 _
 
