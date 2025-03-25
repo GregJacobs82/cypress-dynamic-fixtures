@@ -2,14 +2,21 @@
   "name": "cypress-dynamic-fixtures",
   "author": "Gregory Jacobs",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["cypress", "dynamic fixtures", "fixture", "overwrite", "custom commands"],
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "babel-plugin-import-glob": "^2.0.0"
+  "keywords": ["cypress", "fixtures", "fixture", "overwrite", "custom", "commands", "dynamic", "javascript", "js"],
+  "license": "MIT",
+  "description": "Overwrite cy.fixture to handle JS-based fixture files for dynamic fixture data in Cypress Automation Javascript projects",
+  "devDependencies": {
+    "glob": "^7.1.7"
+  },
+  "peerDependencies": {
+    "cypress": "^13 || ^14"
+  },
+  "exports": {
+    ".": "./src/index.js",
+    "./plugin": "./src/plugin.js"
   }
 }
