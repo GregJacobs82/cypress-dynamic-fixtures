@@ -1,3 +1,6 @@
+<!-- BACK TO TOP -->
+<a name="readme-top"></a>
+
 # Cypress Dynamic Fixtures
 #### by <a href="https://www.gregjacobs.com" target="_blank" rel="noopener">Greg Jacobs</a>
 
@@ -11,8 +14,8 @@ View the repository on <a href="https://github.com/GregJacobs82/cypress-dynamic-
   <ol>
     <li><a href="#-installation">Installation</a></li>
     <li><a href="#-setup">Setup</a></li>
-    <li><a href="#⃕-usage">Usage</a></li>
-    <li><a href="#⃔-backwards-compatible">Backwards compatible</a></li>
+    <li><a href="#-usage">Usage</a></li>
+    <li><a href="#-backwards-compatible">Backwards compatible</a></li>
     <li>
         <a href="#troubleshooting">Troubleshooting</a>
         <ul>

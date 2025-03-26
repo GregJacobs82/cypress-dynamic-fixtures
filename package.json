@@ -1,7 +1,7 @@
 {
   "name": "cypress-dynamic-fixtures",
   "author": "Gregory Jacobs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "src/index.js",
   "repository": {
     "type": "git",
