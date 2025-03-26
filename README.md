@@ -1,7 +1,9 @@
 # Cypress Dynamic Fixtures
-#### by [Greg Jacobs](https://www.gregjacobs.com)
+#### by <a href="https://www.gregjacobs.com" target="_blank" rel="noopener">Greg Jacobs</a>
 
 A simple Cypress command overwrite that allows loading `.js` fixture files. It scans your `cypress/fixtures` folder at test runtime and maps them to `cy.fixture('my_fixture.js')`.
+
+View the repository on <a href="https://github.com/GregJacobs82/cypress-dynamic-fixtures" target="_blank" rel="noopener">Github</a>
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -12,13 +14,14 @@ A simple Cypress command overwrite that allows loading `.js` fixture files. It s
     <li><a href="#⃕-usage">Usage</a></li>
     <li><a href="#⃔-backwards-compatible">Backwards compatible</a></li>
     <li>
-        <a href="#-troubleshooting">Troubleshooting</a>
+        <a href="#troubleshooting">Troubleshooting</a>
         <ul>
             <li><a href="#module-system-compatibility-commonjs-vs-esm">Module System Compatibility: CommonJS vs ESM</a></li>
             <li><a href="#alias-problems">Alias Problems</a></li>
         </ul>
     </li>
     <li><a href="#-final-notes">Final Notes</a></li>
+    <li><a href="#-reference-links">Reference Links</a></li>
   </ol>
 </details>
 
@@ -27,8 +30,7 @@ A simple Cypress command overwrite that allows loading `.js` fixture files. It s
 ```bash
 npm install --save-dev cypress-dynamic-fixtures
 ```
-
-_
+<p align="right"><a href="#readme-top">back to top ⬆️</a></p>
 
 ---
 ## ⛭ Setup
@@ -65,7 +67,7 @@ _
 > ### 3. Done!
 > You are all setup to use `.js` files for dynamic fixture data.
 
-_
+<p align="right"><a href="#readme-top">back to top ⬆️</a></p>
 
 ---
 
@@ -92,7 +94,7 @@ _
 >         .then((fixture) => cy.contains(fixture.todaysDate).should('exist'));
 > });
 > ```
-_
+<p align="right"><a href="#readme-top">back to top ⬆️</a></p>
 
 ---
 
@@ -114,7 +116,7 @@ In your existing project, you can use cy.fixture() with static `.json` data just
   });
   ```
 
-_
+<p align="right"><a href="#readme-top">back to top ⬆️</a></p>
 
 ---
 
@@ -183,9 +185,9 @@ _
 > > 
 > > - ESM: Ensure your project supports ESM (e.g., via "type": "module" in your package.json) and update your import statements accordingly.
 > 
-> If you encounter any issues with module resolution or environment configuration, please refer to the [Node.js ESM documentation](https://nodejs.org/api/esm.html) or open an issue on our project repository.
+> If you encounter any issues with module resolution or environment configuration, please refer to the <a href="https://nodejs.org/api/esm.html" target="_blank" rel="noopener">Node.js ESM documentation</a> or open an issue on our project repository.
 
-_
+<p align="right"><a href="#readme-top">back to top ⬆️</a></p>
 
 > ### Alias Problems
 > 
@@ -228,13 +230,24 @@ _
 > > ```
 > > This ensures that when your fixture files use aliases, Node can correctly resolve them at runtime.
 
-_
+
+<p align="right"><a href="#readme-top">back to top ⬆️</a></p>
 
 ---
 
 ## 📝 Final Notes:
 That’s it! Just install, reference the plugin in cypress.config.js, and import cypress-dynamic-fixtures in your support file. You’re all set to enjoy dynamic .js fixture data in Cypress.
 
-_
+<p align="right"><a href="#readme-top">back to top ⬆️</a></p>
 
 ---
+
+## 🔗 Reference Links:
+
+- [Cypress](https://www.cypress.io/)
+- [Cypress.io - Plugins & Fixtures](https://docs.cypress.io/guides/core-concepts/plugins-and-fixtures)
+- [GitHub - cypress-dynamic-fixtures](https://github.com/gregjacobs/cypress-dynamic-fixtures)
+- [Node.js ESM](https://nodejs.org/api/esm.html)
+
+<p align="right"><a href="#readme-top">back to top ⬆️</a></p>
+

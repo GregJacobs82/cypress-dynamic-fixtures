@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.3] - 2023-03-26
+- Added Github repository and Homepage links to package.json.
+- Updated documentation in README.md.
+
 ## [1.0.2] - 2023-03-26
 ### Fixed
 - Resolved issue with module alias resolution in Node by adding a runtime registration note.
