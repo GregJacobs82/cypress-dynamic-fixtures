@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.0.4] - 2023-03-26
+## [1.0.4] - [1.0.5] - 2023-03-26
 - Fix back-to-top link in README.md.
 
 ## [1.0.3] - 2023-03-26

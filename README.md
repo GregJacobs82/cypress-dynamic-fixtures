@@ -14,8 +14,8 @@ View the repository on <a href="https://github.com/GregJacobs82/cypress-dynamic-
   <ol>
     <li><a href="#-installation">Installation</a></li>
     <li><a href="#-setup">Setup</a></li>
-    <li><a href="#-usage">Usage</a></li>
-    <li><a href="#-backwards-compatible">Backwards compatible</a></li>
+    <li><a href="#⃕-usage">Usage</a></li>
+    <li><a href="#⃔-backwards-compatible">Backwards compatible</a></li>
     <li>
         <a href="#troubleshooting">Troubleshooting</a>
         <ul>
@@ -33,7 +33,7 @@ View the repository on <a href="https://github.com/GregJacobs82/cypress-dynamic-
 ```bash
 npm install --save-dev cypress-dynamic-fixtures
 ```
-<p align="right"><a href="#readme-top">back to top ⬆️</a></p>
+<p align="right"><a href="#user-content-readme-top">back to top ⬆️</a></p>
 
 ---
 ## ⛭ Setup
@@ -70,7 +70,7 @@ npm install --save-dev cypress-dynamic-fixtures
 > ### 3. Done!
 > You are all setup to use `.js` files for dynamic fixture data.
 
-<p align="right"><a href="#readme-top">back to top ⬆️</a></p>
+<p align="right"><a href="#user-content-readme-top">back to top ⬆️</a></p>
 
 ---
 
@@ -97,7 +97,7 @@ npm install --save-dev cypress-dynamic-fixtures
 >         .then((fixture) => cy.contains(fixture.todaysDate).should('exist'));
 > });
 > ```
-<p align="right"><a href="#readme-top">back to top ⬆️</a></p>
+<p align="right"><a href="#user-content-readme-top">back to top ⬆️</a></p>
 
 ---
 
@@ -119,7 +119,7 @@ In your existing project, you can use cy.fixture() with static `.json` data just
   });
   ```
 
-<p align="right"><a href="#readme-top">back to top ⬆️</a></p>
+<p align="right"><a href="#user-content-readme-top">back to top ⬆️</a></p>
 
 ---
 
@@ -190,7 +190,7 @@ In your existing project, you can use cy.fixture() with static `.json` data just
 > 
 > If you encounter any issues with module resolution or environment configuration, please refer to the <a href="https://nodejs.org/api/esm.html" target="_blank" rel="noopener">Node.js ESM documentation</a> or open an issue on our project repository.
 
-<p align="right"><a href="#readme-top">back to top ⬆️</a></p>
+<p align="right"><a href="#user-content-readme-top">back to top ⬆️</a></p>
 
 > ### Alias Problems
 > 
@@ -234,14 +234,14 @@ In your existing project, you can use cy.fixture() with static `.json` data just
 > > This ensures that when your fixture files use aliases, Node can correctly resolve them at runtime.
 
 
-<p align="right"><a href="#readme-top">back to top ⬆️</a></p>
+<p align="right"><a href="#user-content-readme-top">back to top ⬆️</a></p>
 
 ---
 
 ## 📝 Final Notes:
 That’s it! Just install, reference the plugin in cypress.config.js, and import cypress-dynamic-fixtures in your support file. You’re all set to enjoy dynamic .js fixture data in Cypress.
 
-<p align="right"><a href="#readme-top">back to top ⬆️</a></p>
+<p align="right"><a href="#user-content-readme-top">back to top ⬆️</a></p>
 
 ---
 
@@ -252,5 +252,5 @@ That’s it! Just install, reference the plugin in cypress.config.js, and import
 - [GitHub - cypress-dynamic-fixtures](https://github.com/gregjacobs/cypress-dynamic-fixtures)
 - [Node.js ESM](https://nodejs.org/api/esm.html)
 
-<p align="right"><a href="#readme-top">back to top ⬆️</a></p>
+<p align="right"><a href="#user-content-readme-top">back to top ⬆️</a></p>
 
