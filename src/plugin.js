@@ -1,5 +1,6 @@
 const path = require("path");
 const glob = require("glob");
+const {fixtureOverwriteCommand} = require('src/commands');
 
 /**
  * Gathers all .js fixtures from cypress/fixtures (by default) and transforms them
@@ -11,6 +12,8 @@ const glob = require("glob");
  * @returns {Object} updated config
  */
 function dynamicFixturePlugin(on, config, options = {}) {
+    fixtureOverwriteCommand(Cypress);
+
     // By default, assume cypress/fixtures as the fixtures directory
     const fixturesDir = options.fixturesDir
         ? path.resolve(options.fixturesDir)
