@@ -2,6 +2,12 @@
 <a name="readme-top"></a>
 
 # Cypress Dynamic Fixtures
+
+![npm version](https://img.shields.io/npm/v/cypress-dynamic-fixtures) 
+![npm downloads](https://img.shields.io/npm/dm/cypress-dynamic-fixtures) 
+![License](https://img.shields.io/npm/l/cypress-dynamic-fixtures) 
+![GitHub issues](https://img.shields.io/github/issues/GregJacobs82/cypress-dynamic-fixtures) 
+
 #### by <a href="https://www.gregjacobs.com" target="_blank" rel="noopener">Greg Jacobs</a>
 
 A simple Cypress command overwrite that allows loading `.js` fixture files. It scans your `cypress/fixtures` folder at test runtime and maps them to `cy.fixture('my_fixture.js')`.
@@ -27,6 +33,8 @@ View the repository on <a href="https://github.com/GregJacobs82/cypress-dynamic-
     <li><a href="#-reference-links">Reference Links</a></li>
   </ol>
 </details>
+
+---
 
 ## ⇲ Installation
 
