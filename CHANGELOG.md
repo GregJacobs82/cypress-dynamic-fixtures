@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.7] - 2025-09-30
+- Update GIT repository URL.
+
 ## [1.0.6] - 2025-09-29
 - Updated peerDependencies to include Cypress 15.
  
