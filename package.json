@@ -1,7 +1,7 @@
 {
   "name": "cypress-dynamic-fixtures",
   "author": "Gregory Jacobs",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "src/index.js",
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
     "glob": "^7.1.7"
   },
   "peerDependencies": {
-    "cypress": "^13 || ^14"
+    "cypress": ">=13 <16"
   },
   "exports": {
     ".": "./src/index.js",
