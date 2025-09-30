@@ -9,7 +9,7 @@
   },
   "homepage": "https://github.com/GregJacobs82/cypress-dynamic-fixtures#readme",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "cypress",
@@ -25,7 +25,9 @@
   "license": "MIT",
   "description": "Overwrite cy.fixture to handle JS-based fixture files for dynamic fixture data in Cypress Automation Javascript projects",
   "devDependencies": {
-    "glob": "^7.1.7"
+    "@types/jest": "^30.0.0",
+    "glob": "^7.1.7",
+    "jest": "^30.2.0"
   },
   "peerDependencies": {
     "cypress": ">=13 <16"

@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.8] - 2025-09-30
+- Add jest tests for commands and plugin.
+
 ## [1.0.7] - 2025-09-30
 - Update GIT repository URL.
 
