@@ -1,0 +1,23 @@
+name: Compatibility
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        cypress: ['13', '14', '15.9.0', '15', '16']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+        env:
+          CYPRESS_INSTALL_BINARY: '0'
+      - run: npm install --no-save --package-lock=false cypress@${{ matrix.cypress }}
+      - run: npm test -- --runInBand
+      - run: npx cypress install
+      - run: npx cypress verify
+      - run: npm run test:e2e

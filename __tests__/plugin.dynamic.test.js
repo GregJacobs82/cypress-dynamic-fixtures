@@ -1,3 +1,5 @@
+jest.mock('cypress/package.json', () => ({ version: '14.0.0' }), { virtual: true });
+
 const fs = require('fs');
 const path = require('path');
 const os = require('os');
