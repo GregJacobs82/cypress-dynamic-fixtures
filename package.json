@@ -1,7 +1,7 @@
 {
   "name": "cypress-dynamic-fixtures",
   "author": "Gregory Jacobs",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "main": "src/index.js",
   "repository": {
     "type": "git",
@@ -9,7 +9,8 @@
   },
   "homepage": "https://github.com/GregJacobs82/cypress-dynamic-fixtures#readme",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:e2e": "cypress run --browser chrome --config-file test-e2e/cypress.config.js"
   },
   "keywords": [
     "cypress",
@@ -26,14 +27,17 @@
   "description": "Overwrite cy.fixture to handle JS-based fixture files for dynamic fixture data in Cypress Automation Javascript projects",
   "devDependencies": {
     "@types/jest": "^30.0.0",
-    "glob": "^7.1.7",
-    "jest": "^30.2.0"
+    "jest": "^30.2.0",
+    "cypress": "^16.0.0"
   },
   "peerDependencies": {
-    "cypress": ">=13 <16"
+    "cypress": ">=13 <17"
   },
   "exports": {
     ".": "./src/index.js",
     "./plugin": "./src/plugin.js"
+  },
+  "dependencies": {
+    "glob": "^7.1.7"
   }
 }

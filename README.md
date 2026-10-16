@@ -36,6 +36,20 @@ View the repository on <a href="https://github.com/GregJacobs82/cypress-dynamic-
 
 ---
 
+## Compatibility
+
+Supports Cypress 13–16. Cypress 15.10+ uses `config.expose` / `Cypress.expose()`;
+older releases use `config.env` / `Cypress.env()`. Existing setup and `cy.fixture()`
+calls remain the same. Fixture data is browser-accessible: use non-sensitive test
+fixtures rather than production credentials or secrets.
+
+## Development
+
+Run `npm test` for unit tests and `npm run test:e2e` for the Chrome smoke suite.
+The compatibility workflow tests Cypress 13, 14, 15 before and after the expose API,
+and 16. Use a Node.js version supported by the Cypress version under test
+(Node.js 22 is used in CI).
+
 ## ⇲ Installation
 
 ```bash

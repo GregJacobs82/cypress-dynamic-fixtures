@@ -3,7 +3,7 @@ const glob = require("glob");
 
 /**
  * Gathers all .js fixtures from cypress/fixtures (by default) and transforms them
- * into the "dash-to-camel" + "slash-to-$" keys, storing them in config.env.__ALL_JS_FIXTURES__.
+ * into the "dash-to-camel" + "slash-to-$" keys, storing them in the browser-accessible configuration.
  *
  * @param {Function} on - Cypress event hook
  * @param {Object} config - Cypress config object
@@ -37,8 +37,11 @@ function dynamicFixturePlugin(on, config, options = {}) {
         allJsFixtures[transformedKey] = fixtureData;
     });
 
-    // Store the dictionary in Cypress env
-    config.env.__ALL_JS_FIXTURES__ = allJsFixtures;
+    // Cypress.expose was introduced in 15.10; Cypress.env was removed in 16.
+    const [major, minor] = require('cypress/package.json').version.split('.').map(Number);
+    const storageKey = major > 15 || (major === 15 && minor >= 10) ? 'expose' : 'env';
+    config[storageKey] = config[storageKey] || {};
+    config[storageKey].__ALL_JS_FIXTURES__ = allJsFixtures;
 
     // Return updated config
     return config;

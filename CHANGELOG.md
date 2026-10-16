@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - Unreleased
+- Add Cypress 16 support while retaining Cypress 13–15 compatibility.
+- Use expose for fixture data on Cypress 15.10+ instead of the removed Cypress.env API.
+- Declare glob as a runtime dependency.
+- Add version compatibility unit tests and a Chrome smoke suite with a CI matrix.
+
 ## [1.0.8] - 2025-09-30
 - Add jest tests for commands and plugin.
 

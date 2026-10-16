@@ -11,3 +11,8 @@ yarn-error.log
 package-lock.json
 yarn.lock
 cypress/
+
+test-e2e/
+__tests__/
+.github/
+jest.config.js

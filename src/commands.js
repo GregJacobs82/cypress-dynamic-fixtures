@@ -1,7 +1,9 @@
 Cypress.Commands.overwrite('fixture', (originalFn, filePath, encoding, options) => {
     if (filePath.endsWith('.js')) {
         // The plugin stored all our fixture data here
-        const allJsFixtures = Cypress.env('__ALL_JS_FIXTURES__') || {};
+        const allJsFixtures = (typeof Cypress.expose === 'function'
+            ? Cypress.expose('__ALL_JS_FIXTURES__')
+            : Cypress.env('__ALL_JS_FIXTURES__')) || {};
 
         // Optional: some debug logging
         const isDebug = process.env.NODE_ENV !== 'production';
